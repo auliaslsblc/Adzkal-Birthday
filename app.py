@@ -25,6 +25,8 @@ def play_audio_from_url(url):
 audio_url = "https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/5f9c598805b3d77fe5ddfb66cdf48c13c8d4d006/lagu_ulang_tahun.mp3"
 play_audio_from_url(audio_url)
 
+)
+
 # --- Pengaturan Halaman dan Judul ---
 st.set_page_config(
     page_title="Happy 22nd Birthday, Askal!",
@@ -121,7 +123,7 @@ st.markdown(
 st.markdown(
     """
     <div style="font-size: 1.5em; text-align: right; font-weight: bold;">
-    aul,
+    aulia,
     </div>
     """, unsafe_allow_html=True
 )
