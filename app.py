@@ -27,6 +27,18 @@ st.set_page_config(
     layout="wide"
 )
 
+# --- Kode CSS untuk Background Warna ---
+# Ganti '#89CFF0' dengan kode warna pilihanmu
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #89CFF0;
+    }
+    </style>
+    """, unsafe_allow_html=True
+)
+
 # --- Header Foto di Atas Halaman ---
 # Ganti "header_foto.jpg" dengan nama file fotomu
 st.image("header_foto.jpg", use_column_width=True)
@@ -96,11 +108,11 @@ st.caption("semoga kita bisa berjumpa di real life ya jangan virtual mulu hahah 
 col1, col2, col3 = st.columns(3)
 with col1:
     # Ganti dengan nama file fotomu 
-    st.image("https://github.com/auliaslsblc/Adzkal-Birthday/blob/aadee54db27b1557fe4026ae766c55fcad675392/foto_kita_1.JPG")
+    st.image("foto_kita_1.jpg", use_column_width=True)
 with col2:
-    st.image("https://github.com/auliaslsblc/Adzkal-Birthday/blob/aadee54db27b1557fe4026ae766c55fcad675392/foto_kita_3.jpg")
+    st.image("foto_kita_2.jpg", use_column_width=True)
 with col3:
-    st.image("https://github.com/auliaslsblc/Adzkal-Birthday/blob/aadee54db27b1557fe4026ae766c55fcad675392/foto_kita_2.JPG")
+    st.image("foto_kita_3.jpg", use_column_width=True)
     
 # --- Tanda Tangan ---
 st.write("---")
