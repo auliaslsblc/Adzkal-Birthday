@@ -32,17 +32,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- Kode CSS untuk Background Warna ---
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #89CFF0;
-    }
-    </style>
-    """, unsafe_allow_html=True
-)
-
 # --- Header Foto di Atas Halaman ---
 # Ganti "header_foto.jpg" dengan nama file fotomu
 st.image("header_foto.jpg", use_column_width=True)
