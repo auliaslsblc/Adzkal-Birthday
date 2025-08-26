@@ -31,17 +31,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# --- Kode CSS untuk Background Warna ---
-st.markdown(
-    """
-    <style>
-    .stApp {
-        background-color: #89CFF0;
-    }
-    </style>
-    """, unsafe_allow_html=True
-)
-
 # --- Header Foto di Atas Halaman ---
 st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/header_foto.jpg", use_column_width=True)
 
