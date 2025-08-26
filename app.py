@@ -98,11 +98,11 @@ st.caption("semoga kita bisa berjumpa di real life ya jangan virtual mulu hahah 
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/foto_kita_1.jpg", caption="Kenangan Kita 1")
+    st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/foto_kita_1.jpg", caption="tebakk ini pas kapan?")
 with col2:
-    st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/foto_kita_2.jpg", caption="Momen Indah 2")
+    st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/foto_kita_2.jpg", caption="")
 with col3:
-    st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/foto_kita_3.jpg", caption="Kebersamaan 3")
+    st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/foto_kita_3.jpg", caption="")
     
 # --- Tanda Tangan ---
 st.write("---")
