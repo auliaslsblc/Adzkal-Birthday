@@ -31,6 +31,17 @@ st.set_page_config(
     layout="wide"
 )
 
+# --- Kode CSS untuk Background Warna ---
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-color: #89CFF0;
+    }
+    </style>
+    """, unsafe_allow_html=True
+)
+
 # --- Header Foto di Atas Halaman ---
 st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/header_foto.jpg", use_column_width=True)
 
@@ -72,9 +83,9 @@ st.write("---")
 st.markdown(
     """
     <div style="font-size: 1.15em; line-height: 1.5; text-align: justify;">
-    aku tahu belakangan ini kamu lagi banyak masalah. mungkin ada saat-saat kamu mau nyerah but I want you to know how proud I am of you. Aku liat semua perjuangan kamu dan semua kerja keras kamu.
+    aku tahu belakangan ini kamu lagi banyak hal masalah. mungkin ada saat-saat kamu mau nyerah but I want you to know how proud I am of you. Aku liat semua perjuangan kamu dan semua kerja keras kamu.
     <br><br>
-    Remember that it's okay to not be okay. Take a break, breathe, and know that you are not alone. Kamu adalah orang keren!!, dan aku percaya kamu bisa melewati ini semua. Keep your head up, everything will be okay. I'm here for you, always kal♡
+    Remember that it's okay to not be okay. Take a break, breathe, and know that you are not alone. Kamu adalah orang yang luar biasa, dan aku percaya kamu bisa melewati ini semua. Keep your head up, everything will be okay. I'm here for you, always kal♡
     <br><br>
     Thank you for being you, for being my support system, and for loving me ya!
     </div>
