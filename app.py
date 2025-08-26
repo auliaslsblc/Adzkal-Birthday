@@ -21,11 +21,8 @@ def play_audio_from_url(url):
         st.error(f"Error: Terjadi kesalahan saat memuat audio. {e}")
 
 # --- Panggil Fungsi Musik ---
-# Gunakan URL mentah dari file MP3 di GitHub
 audio_url = "https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/5f9c598805b3d77fe5ddfb66cdf48c13c8d4d006/lagu_ulang_tahun.mp3"
 play_audio_from_url(audio_url)
-
-)
 
 # --- Pengaturan Halaman dan Judul ---
 st.set_page_config(
@@ -35,8 +32,7 @@ st.set_page_config(
 )
 
 # --- Header Foto di Atas Halaman ---
-# Ganti "header_foto.jpg" dengan nama file fotomu
-st.image("header_foto.jpg", use_column_width=True)
+st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/header_foto.jpg", use_column_width=True)
 
 # --- Judul dan Efek Visual ---
 st.title("🎂 Happy 22nd Birthday to My Favorite Person, Askal! 🎂")
@@ -122,7 +118,7 @@ st.markdown(
 st.markdown(
     """
     <div style="font-size: 1.5em; text-align: right; font-weight: bold;">
-    aulia,
+    aul,
     </div>
     """, unsafe_allow_html=True
 )
