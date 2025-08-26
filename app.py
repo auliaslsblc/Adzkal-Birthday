@@ -103,11 +103,11 @@ st.caption("semoga kita bisa berjumpa di real life ya jangan virtual mulu hahah 
 col1, col2, col3 = st.columns(3)
 with col1:
     # Ganti dengan nama file fotomu 
-    st.image("https://github.com/auliaslsblc/Adzkal-Birthday/blob/71b704114fae6d339269bec60fd686af9a17ce33/foto_kita_1.JPG")
+    st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/blob/36b6d28cae9af54e984dbbcdb3d01ad4911af2de/foto_kita_1.JPG", use_column_width=True)
 with col2:
-    st.image("https://github.com/auliaslsblc/Adzkal-Birthday/blob/71b704114fae6d339269bec60fd686af9a17ce33/foto_kita_2.JPG")
+    st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/blob/36b6d28cae9af54e984dbbcdb3d01ad4911af2de/foto_kita_2.JPG", use_column_width=True)
 with col3:
-    st.image("https://github.com/auliaslsblc/Adzkal-Birthday/blob/71b704114fae6d339269bec60fd686af9a17ce33/foto_kita_3.jpg")
+    st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/blob/36b6d28cae9af54e984dbbcdb3d01ad4911af2de/foto_kita_3.JPG", use_column_width=True)
     
 # --- Tanda Tangan ---
 st.write("---")
