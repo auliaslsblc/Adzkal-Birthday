@@ -1,11 +1,13 @@
 import streamlit as st
 import base64
+import requests
 
-# --- Kode untuk Memutar Musik Otomatis ---
-def play_audio(file_path):
+# --- Kode untuk Memutar Musik dari URL ---
+def play_audio_from_url(url):
     try:
-        with open(file_path, 'rb') as audio_file:
-            audio_bytes = audio_file.read()
+        response = requests.get(url)
+        if response.status_code == 200:
+            audio_bytes = response.content
             audio_b64 = base64.b64encode(audio_bytes).decode()
             audio_html = f"""
             <audio autoplay loop>
@@ -13,12 +15,15 @@ def play_audio(file_path):
             </audio>
             """
             st.markdown(audio_html, unsafe_allow_html=True)
-    except FileNotFoundError:
-        st.error(f"Error: File audio '{file_path}' tidak ditemukan. Pastikan file berada di folder yang sama.")
+        else:
+            st.error(f"Error: Gagal memuat file audio dari URL. Status Code: {response.status_code}")
+    except Exception as e:
+        st.error(f"Error: Terjadi kesalahan saat memuat audio. {e}")
 
 # --- Panggil Fungsi Musik ---
-# Ganti "lagu_ulang_tahun.mp3" dengan nama file musikmu
-play_audio("lagu_ulang_tahun.mp3")
+# Gunakan URL mentah dari file MP3 di GitHub
+audio_url = "https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/5f9c598805b3d77fe5ddfb66cdf48c13c8d4d006/lagu_ulang_tahun.mp3"
+play_audio_from_url(audio_url)
 
 # --- Pengaturan Halaman dan Judul ---
 st.set_page_config(
@@ -28,7 +33,6 @@ st.set_page_config(
 )
 
 # --- Kode CSS untuk Background Warna ---
-# Ganti '#89CFF0' dengan kode warna pilihanmu
 st.markdown(
     """
     <style>
