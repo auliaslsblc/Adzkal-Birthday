@@ -31,11 +31,42 @@ st.set_page_config(
     layout="wide"
 )
 
+# --- Kode CSS untuk Video Background ---
+video_url_background = "https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/84c131c30bdb06552690625b3daa7d52e3b552eb/video_background.mp4" # URL VIDEO BACKGROUND KAMU
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        position: relative;
+    }}
+    .video-background {{
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        background-color: #89CFF0; /* Warna fallback jika video gagal */
+        opacity: 0.8; /* Opsional: Atur transparansi video agar teks lebih jelas */
+    }}
+    /* Pastikan konten Streamlit berada di atas video */
+    .stApp > header, .stApp > div {{
+        z-index: 0;
+        position: relative;
+    }}
+    </style>
+    <video playsinline autoplay muted loop class="video-background">
+        <source src="{video_url_background}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    """, unsafe_allow_html=True
+    )
 # --- Header Foto di Atas Halaman ---
-st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/header_foto.jpg", use_column_width=True)
-
+st.image("https://raw.githubusercontent.com/auliaslsblc/Adzkal-Birthday/main/header_foto.jpg", use_container_width=True)
 # --- Judul dan Efek Visual ---
-st.title("🎂 Happy 22nd Birthday to My Favorite Person, Askal! 🎉")
+st.title("🎂 Happy 22nd Birthday Askalierrr! 🎉")
 st.balloons()
 st.subheader("It's so amazing to see you grow and become an even better person everyday. Hope this year brings you so much joy and happiness.")
 st.write("---")
@@ -46,9 +77,9 @@ st.markdown(
     <div style="font-size: 1.15em; line-height: 1.5; text-align: justify;">
     Life has been tough, but you never gave up.
     <br><br>
-    Terima kasih ya sudah berjuang sejauh ini. Thank you for being such an amazing person and for all the little things you do.
+    Terima kasih ya sudah berjuang sampai sejauh ini. Thank you for being such an amazing person and for all the little things you do.
     <br><br>
-    Semangat yaa sekolah sama kerjanya pasti itu cape banget kan tapi liat diri kamu sekarang, kamu keren! keep up the good work and never stop chasing your dreams ya kal so excited to see all the great things you'll accomplish to the next step hihi&gt;⩊&lt;
+    Semangat yaa sekolah sama kerjanya pasti itu cape banget kan tapi coba deh liat diri kamu yang sekarang, kamu keren! keep up the good work and never stop chasing your dreams ya kal so excited to see all the great things you'll accomplish to the next step hihi&gt;⩊&lt;
     <br><br>
     Always Proud of you ya♡
     </div>
@@ -60,7 +91,7 @@ st.write("---")
 st.markdown(
     """
     <div style="font-size: 1.15em; line-height: 1.5; text-align: justify;">
-    Semoga Allah selalu melindungimu dari hal-hal yang buruk dan semoga hidupmu selalu penuh dengan berkah ya. May God bless you and keep you safe, always.
+    Semoga Allah selalu melindungi kamu dari hal-hal yang buruk dan semoga hidup kamu selalu penuh dengan berkah ya. May God bless you and keep you safe, always.
     <br><br>
     jangan tinggalin solat dan ngajinya yaaaa(˶˃ ᵕ ˂˶)
     </div>
@@ -72,9 +103,10 @@ st.write("---")
 st.markdown(
     """
     <div style="font-size: 1.15em; line-height: 1.5; text-align: justify;">
-    aku tahu belakangan ini kamu lagi banyak hal masalah. mungkin ada saat-saat kamu mau nyerah but I want you to know how proud I am of you. Aku liat semua perjuangan kamu dan semua kerja keras kamu.
+    aku tahu belakangan ini kamu pasti lagi banyak masalah. mungkin ada saat-saat kamu pengen nyerah but I want you to know how proud I am of you. Aku liat semua perjuangan kamu dari awal sampai sekarang dan semua kerja keras kamu.
     <br><br>
-    Remember that it's okay to not be okay. Take a break, breathe, and know that you are not alone. Kamu adalah orang yang luar biasa, dan aku percaya kamu bisa melewati ini semua. Keep your head up, everything will be okay. I'm here for you, always kal♡
+    Remember that it's okay to not be okay. Take a break, breathe, and know that you are not alone. Kamu adalah orang yang luar biasa tau kal, dan aku percaya kamu bisa melewati ini semua. Keep your head up, everything will be okay. I'm here for you, always kal♡
+    semoga aku selalu bisa nemenin step by step dalam hidup kamu ya!>ᴗ<
     <br><br>
     Thank you for being you, for being my support system, and for loving me ya!
     </div>
@@ -87,6 +119,7 @@ st.markdown(
     """
     <div style="font-size: 1.25em; text-align: center; font-weight: bold;">
     Wishing you a year full of success and happiness. Stay awesome!
+    semoga kamu suka sama kado yang aku berikan dan love letter website ini ya!
     </div>
     """, unsafe_allow_html=True
 )
@@ -118,7 +151,7 @@ st.markdown(
 st.markdown(
     """
     <div style="font-size: 1.5em; text-align: right; font-weight: bold;">
-    aul,
+    aulia,
     </div>
     """, unsafe_allow_html=True
 )
